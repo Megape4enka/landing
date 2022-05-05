@@ -541,6 +541,7 @@ p {
 /* Colour palette */
 .page-header {
   position: relative;
+  overflow: hidden;
 }
 
 .page-header__wrapper {
@@ -755,12 +756,12 @@ footer {
 /* Colour palette */
 .scroll-to-top-desktop {
   all: unset;
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   opacity: 0;
   transition: 0.3s;
-  right: 0;
-  bottom: 0;
+  right: 5%;
+  bottom: 20px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -769,6 +770,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07);
+  z-index: 100;
 }
 .scroll-to-top-desktop svg {
   position: absolute;
@@ -795,7 +798,7 @@ footer {
 }
 @media (min-width: 768px) {
   .correct-posture__info h3 {
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 900;
     margin-bottom: 25px;
   }
@@ -1304,6 +1307,9 @@ footer {
   .slider__info .step-block .text {
     font-size: 18px;
   }
+  .slider__info .step-block .text.active {
+    color: #343639;
+  }
   .slider__info .step-block::before {
     content: "";
     height: 100%;
@@ -1330,6 +1336,7 @@ footer {
     font-size: 13px;
     color: #7B7D80;
     font-weight: 400;
+    line-height: 19px;
   }
 }
 @media (min-width: 1300px) {
@@ -1505,7 +1512,7 @@ footer {
   .download .white-text {
     margin-bottom: 7px;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: normal;
   }
 }
 @media (min-width: 1024px) {
@@ -1537,7 +1544,7 @@ footer {
   }
   .download .white-text {
     font-size: 18px;
-    font-weight: 900;
+    font-weight: normal;
   }
 }
 @media (min-width: 1300px) {
@@ -1549,7 +1556,7 @@ footer {
     align-items: flex-start;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 50%;
+    width: 55%;
     border-radius: 10px 0 0 10px;
     background: radial-gradient(404.38% 2305.87% at 148.92% 234.37%, #FB915F 0%, #F294AA 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.04);
@@ -1569,7 +1576,7 @@ footer {
   }
   .download .white-text {
     font-size: 22px;
-    font-weight: 900;
+    font-weight: normal;
   }
 }
 /*!********************************************************************************************************************************************************************!*\
